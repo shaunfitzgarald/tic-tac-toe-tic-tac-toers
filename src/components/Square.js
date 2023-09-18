@@ -8,7 +8,7 @@ const Square = ({squares, handleClick}) => {
           return (
             <div 
             className="square" 
-            // key={index}
+            key={index}
             onClick={() => handleClick(index)}
             >  
         </div>

@@ -5,11 +5,10 @@ import './App.css'
 const App = () => {
   const [squares, setSquares] = useState(Array(9).fill(null))
   
-  const handleClick = (selectedIndex) => {
-    let userClick = squares.map((index) => {
-      squares[0]++
-    })
-
+    const handleClick = (selectedIndex) => {
+    let userClick = squares.map((index) => 
+    index + 1
+    )
     if (userClick % 2 === 0) {
       squares[selectedIndex]="❌"
       setSquares([...squares])
@@ -18,7 +17,7 @@ const App = () => {
       squares[selectedIndex]="⭕️"
       setSquares([...squares])
     }
-  }
+    }
     
     return (
     <>
