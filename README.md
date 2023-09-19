@@ -82,3 +82,29 @@ There is an interesting approach to the [Tic Tac Toe win condition in React](htt
 - As a developer, my variables are all named semantically.
 - As a developer, I have refactored and efficient code.
 - As a developer, I have my application [deployed as a live website](https://render.com/docs/deploy-create-react-app).
+
+### SQUARE COMPONENT
+// const [value, setValue] = useState(null)
+  // const handleClick = () => {
+  //   setValue("❌")
+
+  // }
+
+  // import React, { useState } from 'react'
+
+// const Square = () => {
+//   const [value, setValue] = useState(null)
+//   const handleClick = () => {
+//     setValue("❌")
+
+//   }
+//   return (
+//     <>
+//         <button className="square"
+//         onClick={onSquareClick}
+//         >{value}</button>
+//     </>
+//   )
+// }
+
+// export default Square
