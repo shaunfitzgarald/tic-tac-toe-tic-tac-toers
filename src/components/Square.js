@@ -1,21 +1,18 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-const Square = ({squares, handleClick}) => {
+const Square = () => {
+  const [value, setValue] = useState(null)
+  const handleClick = () => {
+    setValue("❌")
+
+  }
   return (
     <>
-      <div className="grid">
-        {squares.map((index) => {
-          return (
-            <div 
-            className="square" 
-            key={index}
-            onClick={() => handleClick(index)}
-            >  
-        </div>
-        )
-          })}
-        </div>
+        <button className="square"
+        onClick={onSquareClick}
+        >{value}</button>
     </>
   )
 }
+
 export default Square
